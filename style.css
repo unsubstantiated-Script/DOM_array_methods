@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #BFA72C;
+    --secondary-color: #EBEDF2;
+    --tertiary-color: #2C3A72;
+    --quadrary-color: #730C25;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+aside {
+    padding: 10px 20px;
+    width: 250px;
+    border-right: 3px solid var(--primary-color);
+}
+
+button {
+    cursor: pointer;
+    color: var(--quadrary-color);
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 3px 3px #333;
+}
+
+button:hover {
+    background-color: var(--quadrary-color);
+    color: var(--secondary-color);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px;
+}
+
+main {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+h2 {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+h3 {
+    background-color: var(--secondary-color);
+    color: var(--quadrary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 20px 0 0;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
